@@ -12,3 +12,12 @@ curl -X POST -H "Content-Type: application/json" http://localhost:82/api/login_c
 
 Subsequent time<br />
 curl -X  GET  http://localhost:82/api/sample -H "Authorization: Bearer  xxxx”
+
+
+Test 
+
+php ./vendor/bin/phpunit
+
+
+JWT Reference
+https://github.com/lexik/LexikJWTAuthenticationBundle/blob/2.x/Resources/doc/index.md#installation
