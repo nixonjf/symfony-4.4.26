@@ -21,7 +21,7 @@ class AuthControllerTest extends WebTestCase {
 
         $client = static::createClient();
         $client->request(
-                'GET', '/api/register', array(), array(), array('CONTENT_TYPE' => 'application/json'), json_encode(array(
+                'POST', '/api/register', array(), array(), array('CONTENT_TYPE' => 'application/json'), json_encode(array(
             'username' => $this->testUsername,
             'password' => $this->testPassword,
                 ))

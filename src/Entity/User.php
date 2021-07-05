@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
+ *
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ORM\Table(name="`user`")
  */
@@ -20,6 +21,7 @@ class User implements UserInterface
     private $id;
 
     /**
+     *
      * @ORM\Column(type="string", length=180, unique=true)
      */
     private $email;
