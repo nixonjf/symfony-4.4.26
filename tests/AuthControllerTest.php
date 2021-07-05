@@ -46,8 +46,17 @@ class AuthControllerTest extends WebTestCase {
                 ))
         );
         $response = $client->getResponse();
+          
 
         $this->assertSame(200, $response->getStatusCode(), 'Status Code = 200');
+        
+        
+        
+        $data = json_decode($response->getContent(), true);
+            
+        
+        $this->assertArrayHasKey('token', $data); 
+        
 
         return $client;
     }

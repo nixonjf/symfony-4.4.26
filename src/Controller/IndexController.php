@@ -3,10 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
-use Symfony\Component\HttpFoundation\Request;
-use App\Entity\User;
+use Symfony\Component\HttpFoundation\JsonResponse; 
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class IndexController extends \Symfony\Bundle\FrameworkBundle\Controller\AbstractController
