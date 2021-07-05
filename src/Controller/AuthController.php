@@ -30,5 +30,7 @@ class AuthController extends AbstractController
         return $authenticationManager->registerUser(
             $data
         );
+        
     }
+    
 }

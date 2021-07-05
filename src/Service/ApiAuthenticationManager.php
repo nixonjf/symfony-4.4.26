@@ -5,17 +5,16 @@ namespace App\Service;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\User;
 use Symfony\Component\Validator\Validation;
-use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Validator\Constraints as Assert; 
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use App\Util\Utils;
 
 /**
  * Authentication manager is used to manage user authentication.
  *
  * @author Pit Solutions Pvt Ltd
  */
-class ApiAuthenticationManager
-{
+class ApiAuthenticationManager {
 
     /** @var EntityManagerInterface */
     public $em;
@@ -23,8 +22,7 @@ class ApiAuthenticationManager
     /**
      * Constructor function.
      */
-    public function __construct(EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder)
-    {
+    public function __construct(EntityManagerInterface $em, UserPasswordEncoderInterface $passwordEncoder) {
         $this->em = $em;
         $this->passwordEncoder = $passwordEncoder;
     }
@@ -32,12 +30,11 @@ class ApiAuthenticationManager
     /**
      * Function to get contact login  response.
      */
-    public function registerUser(array $data)
-    {
+    public function registerUser(array $data) {
         $user = $this->em->getRepository(User::class)->findOneBy(['email' => $data['username']]);
 
         if (null != $user) {
-            return new JsonResponse(["error" => $data['username'].' is already registered !'], 500);
+            return Utils::generateJsonResponse(500, ["message" => $data['username'] . ' is already registered !']);
         }
 
         $validator = Validation::createValidator();
@@ -49,7 +46,8 @@ class ApiAuthenticationManager
 
         $violations = $validator->validate($data, $constraint);
         if ($violations->count() > 0) {
-            return new JsonResponse(["error" => (string) $violations], 500);
+
+            return Utils::generateJsonResponse(500, ["message" => (string) $violations]);
         }
         $email = $data['username'];
 
@@ -59,7 +57,6 @@ class ApiAuthenticationManager
         $user = new User();
         $password = $this->passwordEncoder->encodePassword($user, $data['password']);
         $user
-//                ->setUsername($username)
                 ->setPassword($password)
                 ->setEmail($email)
                 ->setRoles(['ROLE_USER'])
@@ -69,20 +66,10 @@ class ApiAuthenticationManager
             $this->em->persist($user);
             $this->em->flush();
         } catch (\Exception $e) {
-            return new JsonResponse(["error" => $e->getMessage()], 500);
-        }
-        return new JsonResponse(["success" => $user->getUsername() . " has been registered!"], 200);
-
-
-
-        echo 1;
-        die;
-        if ($contactLogin instanceof ContactLogin) {
-            return JsonResponse::create($this->createContactLoginResponse($contactLogin));
+            return Utils::generateJsonResponse(500, ["message" => $e->getMessage()]);
         }
 
-        return new JsonResponse([
-            'login' => 'access denied',
-        ]);
+        return Utils::generateJsonResponse(200, ["message" => $user->getUsername() . " has been registered!"]);
     }
+
 }
