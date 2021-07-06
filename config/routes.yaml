@@ -9,7 +9,7 @@ register:
     controller: App\Controller\IndexController::register   
 index:
     path: /
-    controller: App\Controller\IndexController::redirect_exec 
+    controller: App\Controller\AdminController::index 
 sample:
     path: /api/sample
     controller: App\Controller\IndexController::redirect_exec 
