@@ -6,14 +6,199 @@
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+
+            <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui/dist/css/coreui.min.css">
+            <script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+            <link href="{{ asset('assets/coreui/style.css') }}" rel="stylesheet" />
+            <link href="{{ asset('assets/coreui/coreui-chartjs.css') }}" rel="stylesheet" />
+
+        {% endblock %} 
 
         {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
+            <script src="{{ asset('assets/coreui/analytics.js') }}"></script>
         {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+
+        <meta name="robots" content="noindex">
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-118965717-1');
+        </script><style type="text/css">/* Chart.js */
+            /*
+             * DOM element rendering detection
+             * https://davidwalsh.name/detect-node-insertion
+             */
+            @keyframes chartjs-render-animation {
+                from { opacity: 0.99; }
+                to { opacity: 1; }
+            }
+
+            .chartjs-render-monitor {
+                animation: chartjs-render-animation 0.001s;
+            }
+
+            /*
+             * DOM element resizing detection
+             * https://github.com/marcj/css-element-queries
+             */
+            .chartjs-size-monitor,
+            .chartjs-size-monitor-expand,
+            .chartjs-size-monitor-shrink {
+                position: absolute;
+                direction: ltr;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+                pointer-events: none;
+                visibility: hidden;
+                z-index: -1;
+            }
+
+            .chartjs-size-monitor-expand > div {
+                position: absolute;
+                width: 1000000px;
+                height: 1000000px;
+                left: 0;
+                top: 0;
+            }
+
+            .chartjs-size-monitor-shrink > div {
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                left: 0;
+                top: 0;
+            }
+        </style> 
+    </head> 
+    <body class="c-app" data-new-gr-c-s-check-loaded="14.1020.0" data-gr-ext-installed="">
+        {% block header %}
+            {{ include('admin/templates/header.html.twig') }}
+
+            <div class="c-wrapper c-fixed-components">
+                <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+                    <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+                        <svg class="c-icon c-icon-lg">
+                        <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-menu"></use>
+                        </svg>
+                    </button><a class="c-header-brand d-lg-none" href="https://coreui.io/demo/free/3.4.0/#">
+                        <svg width="118" height="46" alt="CoreUI Logo">
+                        <use xlink:href="{{asset('assets/coreui/icons/sprites/flag.svg')}}#full"></use>
+                        </svg></a>
+                    <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+                        <svg class="c-icon c-icon-lg">
+                        <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="c-header-nav d-md-down-none">
+                        <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="https://coreui.io/demo/free/3.4.0/#">Dashboard</a></li>
+                        <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="https://coreui.io/demo/free/3.4.0/#">Users</a></li>
+                        <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="https://coreui.io/demo/free/3.4.0/#">Settings</a></li>
+                    </ul>
+                    <ul class="c-header-nav ml-auto mr-4">
+                        <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="https://coreui.io/demo/free/3.4.0/#">
+                                <svg class="c-icon">
+                                <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-bell"></use>
+                                </svg></a></li>
+                        <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="https://coreui.io/demo/free/3.4.0/#">
+                                <svg class="c-icon">
+                                <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-list-rich"></use>
+                                </svg></a></li>
+                        <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="https://coreui.io/demo/free/3.4.0/#">
+                                <svg class="c-icon">
+                                <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
+                                </svg></a></li>
+                        <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="https://coreui.io/demo/free/3.4.0/#" role="button" aria-haspopup="true" aria-expanded="false">
+                                <div class="c-avatar"><img class="c-avatar-img" src="assets/coreui/6.jpg" alt="user@email.com"></div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right pt-0">
+                                <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-bell"></use>
+                                    </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
+                                    </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-task"></use>
+                                    </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-comment-square"></use>
+                                    </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+                                <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-user"></use>
+                                    </svg> Profile</a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-settings"></use>
+                                    </svg> Settings</a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-credit-card"></use>
+                                    </svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-file"></use>
+                                    </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-lock-locked"></use>
+                                    </svg> Lock Account</a><a class="dropdown-item" href="https://coreui.io/demo/free/3.4.0/#">
+                                    <svg class="c-icon mr-2">
+                                    <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-account-logout"></use>
+                                    </svg> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="c-subheader px-3">
+
+                        <ol class="breadcrumb border-0 m-0">
+                            <li class="breadcrumb-item">Home</li>
+                            <li class="breadcrumb-item"><a href="https://coreui.io/demo/free/3.4.0/#">Admin</a></li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+
+                        </ol>
+                    </div>
+                </header>
+
+            {% endblock %}
+
+            <main class="c-main">
+                <div class="container-fluid">
+                    <div class="fade-in"> 
+                        {% block body %}
+
+
+
+
+                        {% endblock %}
+                    </div>
+                </div>
+            </main> 
+            <div class="c-body">
+                <footer class="c-footer">
+                    <div><a href="https://coreui.io/">CoreUI</a> © 2020 creativeLabs.</div>
+                    <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+                </footer>
+            </div>
+        </div>
+        <script src="assets/coreui/coreui.bundle.min.js"></script>
+        <!--[if IE]><!-->
+        <script src="assets/coreui/svgxuse.min.js"></script>
+        <!--<![endif]-->
+
+        <script src="assets/coreui/coreui-chartjs.bundle.js"></script>
+        <script src="assets/coreui/coreui-utils.js"></script>
+        <script src="assets/coreui/main.js"></script>
+
+
     </body>
 </html>
