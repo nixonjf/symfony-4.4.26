@@ -9,25 +9,15 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use App\Form\LoginFormType;
 
-class SecurityController extends AbstractController
-{
+class SecurityController extends AbstractController {
 
     /**
+     *  
+     *  Displays the login page. 
+     * 
      * @Route("/login", name="app_login")
      */
-    public function login(Request $request, AuthenticationUtils $authenticationUtils): Response
-    {
-
-
-//        // The token is valid; allow the user to change their password.
-//        $form = $this->createForm(ChangePasswordFormType::class);
-//        $form->handleRequest($request);
-//
-//        if ($form->isSubmitted() && $form->isValid()) {
-//
-//        }
-
-
+    public function login(Request $request, AuthenticationUtils $authenticationUtils): Response {
 
 
         if ($this->getUser()) {
@@ -48,8 +38,8 @@ class SecurityController extends AbstractController
     /**
      * @Route("/logout", name="app_logout")
      */
-    public function logout()
-    {
+    public function logout() {
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
+
 }
