@@ -11,25 +11,27 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * @Route("/api")
  */
-class AuthController extends AbstractController {
+class AuthController extends AbstractController
+{
 
     /**
      * Process request to add a new user.
      *
-     * 
+     *
      * @Route("/register", name="api_auth_register",  methods={"POST"})
      * @param Request $request
      * @param AuthenticationManager $authenticationManager
      * @return JsonResponse
      */
-    public function register(Request $request, AuthenticationManager $authenticationManager) {
+    public function register(Request $request, AuthenticationManager $authenticationManager)
+    {
         $data = json_decode(
-                $request->getContent(), true
+            $request->getContent(),
+            true
         );
 
         return $authenticationManager->registerUser(
-                        $data
+            $data
         );
     }
-
 }
