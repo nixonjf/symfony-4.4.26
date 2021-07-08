@@ -1,27 +1,83 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Reset your password{% endblock %}
+{% block title %}Reset your password{% endblock %} 
 
 {% block body %}
+
+
     <div  class="row wrapper fadeInDown">
         <div class="col-lg-6 col-sm-12" id="formContent">
+
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <svg   id="icon"class="c-icon">
+
+                <use xlink:href="{{asset('assets/coreui/icons/sprites/flag.svg')}}#full"></use>
+                </svg>
+            </div>
+            <div class="card-header">
+                <h2> Reset your password </h2>
+            </div>
             {% for flashError in app.flashes('reset_password_error') %}
                 <div class="alert alert-danger" role="alert">{{ flashError }}</div>
             {% endfor %}
-            <h1>Reset your password</h1>
+            {#            {% if error %}#}
+            {#                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>#}
+            {#            {% endif %} #}
+            <!-- Reset Form --> 
 
             {{ form_start(requestForm) }}
-            {{ form_row(requestForm.email) }}
-            <div>
-                <small>
-                    Enter your email address and we we will send you a
-                    link to reset your password.
-                </small>
-            </div>
-             <br>
+            <small>
+                Enter your email address and we we will send you a
+                link to reset your password.
+            </small>
 
-            <button class="btn btn-primary">Send password reset email</button>
+
+            <div class="card-body">
+
+                <div class="form-group">
+                    <div class="input-group">
+                        {#                        <input class="form-control" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>#}
+
+
+
+
+                        <div class="input-group-append"><span class="input-group-text">
+                                <svg class="c-icon">
+                                <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
+                                </svg></span></div>
+
+                        {{ form_widget(requestForm.email , {'attr':{'value':'', 'class':'form-control'} }) }} 
+
+{#                        {{ form_row(requestForm.email , {'attr':{'value':'', 'class':'form-control'} }) }} #}
+
+                    </div>
+                </div>
+
+
+                {#
+                    Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                    See https://symfony.com/doc/current/security/remember_me.html
+            
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" name="_remember_me"> Remember me
+                        </label>
+                    </div>
+                #} 
+                <div class="form-group form-actions">
+                    <button class="btn btn-block btn-primary" type="submit">Send password reset email</button>
+                </div>
+
+            </div>  
+
             {{ form_end(requestForm) }}
+
         </div>
     </div>
+
+
+
 {% endblock %}
