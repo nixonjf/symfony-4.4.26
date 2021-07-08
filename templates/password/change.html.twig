@@ -1,0 +1,25 @@
+{% trans_default_domain 'messages' %}
+{% block body %}
+    {{ form_start(changePasswordForm, {'method':'POST', 'action':path('change_password'), 'attr':{'id': 'change_password', 'name': 'change_password'} }) }}
+    <div class="modal-header">
+        <h4 class="modal-title" > {{'menu_category.change_password'|trans}}</h4>
+        {% trans_default_domain 'trans' %}
+        <button type="button" class="close" data-dismiss="modal" aria-label="{{ 'cancel'|trans }}">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% trans_default_domain 'trans' %}
+    <div class="modal-body">
+        <div class="  form-group">
+            {{ form_widget(changePasswordForm._password) }}
+        </div>
+        <div class=" form-group">
+            {{ form_widget(changePasswordForm._confirm_password) }}
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">{{ 'cancel'|trans }} </button>
+        <button type="submit" class="btn btn-default  change_password_submit" >{{ 'submit' |trans }} </button>
+    </div>
+    {{ form_end(changePasswordForm) }}
+{% endblock %}

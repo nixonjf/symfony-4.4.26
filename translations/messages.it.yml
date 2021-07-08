@@ -1,0 +1,58 @@
+homepage: Casa
+information: Informazione
+pending_issues: Problèmes en suspens
+policy_categories: Polizza categorie
+create: Creare
+profile: Profilo
+profile_header: Contatto Informazione
+menu_category:
+    policies: Polizze
+    claims: Sinistro
+    files: Files
+    documentOverview: Panoramica del documento
+    tasks: Problemi
+    home: Casa
+    change_password: Cambiare la password
+    logout: Disconnettersi
+    contact : Il vostro contatto personale
+    my_profile : Il mio profilo
+policy:
+    no_policy_info: Dieses Kundenlogin hat keine Policen hinterlegt, welche angezeigt werden können. -IT
+claims:
+    category: Sinistro categorie
+    create: Sinistri Creare
+    create_success: Schadenfall erfolgreich erfasst. -IT
+    create_warning: Schadenfall erfasst. Dateien konnten nicht hochgeladen werden. -IT
+    mail_not_send: Non è stato possibile inviare la posta.
+    create_danger: Schadenfall konnte nicht erfasst werden. -IT
+    create_mail_subject: Neuer Schadenfall erfasst -IT
+files:
+    folder_selection: Ordner Auswahl -IT
+    not_found_in_server: Il file non esiste nel server
+    not_found: 'Files not found -IT'
+    no_file_info: This customer login has no files stored that can be displayed -IT.
+
+notification_mail:
+    file_uploaded:
+        title: New files have been uploaded in Brokerstar -IT
+        subject: File uploaded in brokerstar -IT
+        salutation: Dear -IT
+        table:
+            heading: 
+                title: Title -IT
+                files: Files -IT
+allowed_file_types: Sono supportati solo (pdf, xls, xlsx, doc e docx)
+report:
+    no_report: Nessun rapporto generato
+    success: Il rapport %fileName% è stato generato correttamente
+policy_overview: Polizze Panoramica
+claim_list: Sinistro elenco
+choose_files: 'Scegliere i file'
+no_file_chosen: 'Nessun file scelto'
+task_create: Nuova problemi
+tasks_list: Faccende in sospeso
+task_details: Problemi dettagli
+footer_text: 'Super-Broker Holding AG, Gartenstrasse 24, 6230 Emmenbrucke, telefono 04242323'
+telephone: 'Telefono'
+mobile: 'Mobile'
+kundeberater: 'Consulente clienti'

@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain 'trans' %}
+{% block body %}
+    {{ form_start(updatePasswordForm, {'action': path('reset-password'),  'method': 'POST', 'attr': {'id' : 'login_form',  'class': 'col-md-offset-3 col-md-6 reset-form-layout'} }) }}
+    <div class="form-group">
+        <img src="{{ asset('assets/images/login.png') }}">
+    </div>
+    <br>
+    {% for warning in app.flashes('warning') %}
+        <div class="alert alert-danger">
+            {{ warning }}
+        </div>
+    {% endfor %}
+    {% for success in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ success }}
+        </div>
+    {% endfor %}
+    {% for danger in app.flashes('danger') %}
+        <div class="alert alert-danger">
+            {{ danger }}
+        </div>
+    {% endfor %}
+    <h3>{{ 'password.reset_password_for'|trans }} <b>{{username}}</b></h3><br>
+    <div class="row">  
+        <div class="form-group    ">
+            {{ form_label(updatePasswordForm._password ,'', {'label_attr':{'class': 'col-lg-5 control-label required' } }) }}
+            <div class="col-lg-7">
+                {{ form_widget(updatePasswordForm._password) }}
+            </div>
+        </div>   
+    </div> 
+    <br>
+    <div class="row">  
+        <div class="form-group    ">
+            {{ form_label(updatePasswordForm._confirm_password ,'', {'label_attr':{'class': 'col-lg-5 control-label required' } }) }}
+            <div class="col-lg-7">
+                {{ form_widget(updatePasswordForm._confirm_password) }}
+            </div>
+        </div>   
+    </div>  
+    {{ form_widget(updatePasswordForm._reset_token, {'attr':{'value': token} }) }}
+    <br>
+    <div class="pull-right"> 
+        <a type="button"  href="{{ path('login-cancel') }}"  class="btn btn-default" data-dismiss="modal">{{ 'cancel'|trans }} </a>
+        <button type="submit" class="btn btn-default btn-default">
+            {{ 'submit'|trans  }}
+        </button> 
+    </div> 
+    {{ form_end(updatePasswordForm) }}
+{% endblock %}

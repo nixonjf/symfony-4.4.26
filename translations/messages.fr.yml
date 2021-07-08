@@ -1,0 +1,58 @@
+homepage: Accueil
+information: Information
+pending_issues: Problèmes en suspens
+policy_categories: Polices catégories
+create: Créer
+profile: Profil
+profile_header: Contact information
+menu_category:
+    policies: Polices
+    claims: Sinistres
+    files: Fichiers
+    documentOverview: Aperçu du document
+    tasks: Problèmes
+    home: Accueil
+    change_password: Changer le mot de passe
+    logout: Déconnexion
+    contact : Votre contact personnel
+    my_profile : Mon profil
+policy:
+    no_policy_info: Dieses Kundenlogin hat keine Policen hinterlegt, welche angezeigt werden können. -FR 
+claims:
+    category: Sinistres catégorie
+    create: Sinistre Créer
+    create_success: Schadenfall erfolgreich erfasst. -FR
+    create_warning: Schadenfall erfasst. Dateien konnten nicht hochgeladen werden. -FR
+    mail_not_send: Le mail n'a pas pu être envoyé
+    create_danger: Schadenfall konnte nicht erfasst werden. -FR
+    create_mail_subject: Neuer Schadenfall erfasst -FR
+files:
+    folder_selection: Ordner Auswahl -FR
+    not_found_in_server: Le fichier n'existe pas sur le serveur
+    not_found: 'Files not found -FR'
+    no_file_info: This customer login has no files stored that can be displayed -FR.
+
+notification_mail:
+    file_uploaded:
+        title: New files have been uploaded in Brokerstar -FR
+        subject: File uploaded in brokerstar -FR
+        salutation: Dear -FR
+        table:
+            heading: 
+                title: Title -FR
+                files: Files -FR
+allowed_file_types: Seuls (pdf, xls, xlsx, doc et docx) sont pris en charge
+report:
+    no_report: Aucun rapport généré
+    success: Le rapport %fileName% a été généré avec succès
+policy_overview: Police Aperçu
+claim_list: Sinistre liste
+choose_files: 'Choisir des fichiers'
+no_file_chosen: 'Aucun fichier choisi'
+task_create: Nouveau problème
+tasks_list: Questions en suspens
+task_details: Problème détails 
+footer_text: 'Super-Broker Holding AG, Gartenstrasse 24, 6230 Emmenbrucke, Téléphone 04242323'
+telephone: 'Téléphone'
+mobile: 'Mobile'
+kundeberater: 'Conseiller à la clientèle'

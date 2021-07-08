@@ -1,0 +1,80 @@
+instruction:
+  home: 'Willkommen auf Ihrem Versicherungsportal. Hier können Sie Ihre Policen einsehen, Schäden erfassen oder Kontakt mit uns aufnehmen. -IT'
+  policy: 'Bitte wählen Sie hier unter den verschiedenen Policen-Kategorien aus. -IT'
+  claim: 'Bitte wählen Sie die entsprechende Kategorie aus, um Ihre Daten zu erfassen. -IT'
+  folder: 'Hier befinden sich Ihre Dateien und Dokumente, bitte wählen Sie aus. -IT'
+  customer: 'Sie finden hier verschiedene Kontaktdaten. -IT'
+open: Aperto
+not_found:
+  policies: 'Keine Policen gefunden -IT'
+create_claim: 'Caso di sinistro'
+detail_information: 'Detail Informationen'
+premium_declaration: 'Dichiarazione'
+to_contact: Kontaktaufnahme -IT
+modul:
+  Contacts: Contatto files
+  ContactsFilesLink: Contatto
+  Policies: Polizza files
+  PoliciesFilesLink: Polizza 
+  Products: Prodotto files
+  Claims: Sinistro files
+  ClaimsFilesLink: Sinistro 
+  Projects: Progetto files
+  Bill: Fattura files
+block:
+  title:
+    all:
+      policies: Alle Polizze
+      claims: Alle Schadenfälle -IT
+twoFa:
+  login: 'Login'
+  cancelLogin: 'Interrompere'
+  verify: 'Überprüfen'
+  qr_title: 'Bitte den QR-Code mit Ihrer App einlesen.'
+  error_code: 'Falsche 2FA Authentifizierung oder der Code ist bereits abgelaufen. Bitte neu versuchen.'
+  error_block: 'Zu viele Versuche (%try%). Gesperrt bis %date% '
+  instructions_qr: 'Lesen Sie bitte mit einer 2FA-App (z.B. Google Authenticator) den QR-Code ein und geben Sie die angezeigte Nummer in das Feld ein.'
+  instructions_code: 'Geben Sie bitte die angezeigte Nummer in der 2FA-App (z.B. Google Authenticator) in das Feld ein, mit der Sie zuvor den QR-Code eingelesen haben. Beim Verlust der App ist über die Hotline den 2FA zurückzusetzen.'
+search: 'Ricerca'
+show: 'Show'
+first: 'Prima'
+previous: 'Precedente'
+next: 'Prossimo'
+last: 'Ultimo'
+info: 'Mostra _START_ a _END_ di _TOTAL_ voci'
+infoEmpty: 'Mostra da 0 a 0 da 0 voci'
+infoFiltered: '(filtrato da _MAX_ voci totali)'
+lengthMenu: 'Mostra _MENU_ voci'
+noSelected: 'Nessuna selezione effettuata'
+rowSelected: '1 riga selezionata'
+rowsSelected: '%d righe selezionate'
+selectAll: 'Seleziona tutti'
+selectNone: 'Cancellare la selezione'
+reports:
+  Policenliste_mit_Praemie: 'Lista polizze con premi'
+  Policenspiegel: 'Panoramica polizze'
+  Schadenliste: 'Lista danni sinistri'
+  reports: Rapporti
+#password reset 
+password:
+  forgot: Ha dimenticato la password
+  reset: Reimpostare la password
+  get_password_resetLink: Link per reimpostare la password
+  get_reset_mail_page_description: Richiedi collegamento per reimpostare la password    
+  reset_mail_sent: Link per la reimpostazione della password inviato all'e-mail registrata
+  reset_success: Password cambiata con successo
+  passwords_do_not_match: La password non corrisponde
+  link_expired : Il link e scaduto.   
+  too_many_attempts : Troppi tentativi, prova dopo (%time%) secondi.
+  bad_credentials : Pessime Credenziali 
+  password :  Password
+  new_password : Nuova password
+  confirm_password : Reinserire la password
+  reset_password_for: Reimposta la password per l'utente
+cancel: Annulla
+send_mail: 'Inviare una mail'
+create_issue: 'Crea problema'
+issues_create_send_mail_subject: 'Modifica dei dati del cliente'
+close: Vicino
+submit: Invia
+username: Nome utente

@@ -1,0 +1,80 @@
+instruction:
+  home: 'Willkommen auf Ihrem Versicherungsportal. Hier können Sie Ihre Policen einsehen, Schäden erfassen oder Kontakt mit uns aufnehmen.'
+  policy: 'Bitte wählen Sie hier unter den verschiedenen Policen-Kategorien aus.'
+  claim: 'Bitte wählen Sie die entsprechende Kategorie aus, um Ihre Daten zu erfassen.'
+  folder: 'Hier befinden sich Ihre Dateien und Dokumente, bitte wählen Sie aus.'
+  customer: 'Sie finden hier verschiedene Kontaktdaten.'
+open: Öffnen
+not_found:
+  policies: 'Keine Policen gefunden'
+create_claim: 'Schadenfall erfassen'
+detail_information: 'Detail Informationen'
+premium_declaration: 'Deklaration'
+to_contact: Kontaktaufnahme
+modul:
+  Contacts: Kontakt Dateien
+  ContactsFilesLink: Kontakt
+  Policies: Policen Dateien
+  PoliciesFilesLink: Policen 
+  Products: Produkt Dateien
+  Claims: Schaden Dateien
+  ClaimsFilesLink: Schadenfälle 
+  Projects: Projekt Dateien
+  Bill: Rechnungs Dateien
+block:
+  title:
+    all:
+      policies: Alle Policen
+      claims: Alle Schadenfälle
+twoFa:
+  login: 'Anmelden'
+  cancelLogin: 'Abbrechen'
+  verify: 'Überprüfen'
+  qr_title: 'Bitte den QR-Code mit Ihrer App einlesen.'
+  error_code: 'Falsche 2FA Authentifizierung oder der Code ist bereits abgelaufen. Bitte neu versuchen.'
+  error_block: 'Zu viele Versuche (%try%). Gesperrt bis %date% '
+  instructions_qr: 'Lesen Sie bitte mit einer 2FA-App (z.B. Google Authenticator) den QR-Code ein und geben Sie die angezeigte Nummer in das Feld ein.'
+  instructions_code: 'Geben Sie bitte die angezeigte Nummer in der 2FA-App (z.B. Google Authenticator) in das Feld ein, mit der Sie zuvor den QR-Code eingelesen haben. Beim Verlust der App ist über die Hotline den 2FA zurückzusetzen.'
+search: 'Suchen'
+show: 'Anzeige'
+first: 'Erste'
+previous: 'Vorheriger'
+next: 'Nächster'
+last: 'Letzte'
+info: 'Zeige _START_ bis _END_ von _TOTAL_ Einträge'
+infoEmpty: 'Zeige 0 bis 0 von 0 Einträge'
+infoFiltered: '(gefiltert von _MAX_ total Einträge)'
+lengthMenu: 'Zeige _MENU_ Einträge'
+noSelected: 'Keine Auswahl getroffen'
+rowSelected: '1 Eintrag ausgewählt'
+rowsSelected: '%d Einträge ausgewählt'
+selectAll: 'Alle Einträge auswählen'
+selectNone: 'Auswahl löschen'
+reports:
+  Policenliste_mit_Praemie: 'Policenliste mit Praemie'
+  Policenspiegel: Policenspiegel
+  Schadenliste: Schadenliste
+  reports: Berichte
+#password reset 
+password:
+  forgot: Passwort vergessen
+  reset: Passwort zurücksetzen
+  get_password_resetLink: Link zum Zurücksetzen des Passworts
+  get_reset_mail_page_description: Link senden, um Passwort zurückzusetzen
+  reset_mail_sent: Link zum Zurücksetzen des Passworts an die registrierte E-Mail gesendet
+  reset_success: Das Passwort wurde erfolgreich geändert
+  passwords_do_not_match: Passwort stimmt nicht überein
+  link_expired : Der Link ist abgelaufen.
+  too_many_attempts : Zu viele Versuche, bitte versuchen Sie es nach (%time%) Sekunden.
+  bad_credentials : Falsche Zugangsdaten
+  password : Passwort
+  new_password : Neues Passwort
+  confirm_password : Kennwort erneut eingeben 
+  reset_password_for: Passwort für Benutzer zurücksetzen 
+cancel: Abbrechen
+send_mail: 'Mail senden'
+create_issue: 'Pendenz erstellen'
+issues_create_send_mail_subject: 'Kundendaten Änderung'
+close: Schließen
+submit: Einreichen
+username: Nutzername 

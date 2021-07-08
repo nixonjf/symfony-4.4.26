@@ -1,0 +1,80 @@
+instruction:
+  home: 'Willkommen auf Ihrem Versicherungsportal. Hier können Sie Ihre Policen einsehen, Schäden erfassen oder Kontakt mit uns aufnehmen. -FR'
+  policy: 'Bitte wählen Sie hier unter den verschiedenen Policen-Kategorien aus. -FR'
+  claim: 'Bitte wählen Sie die entsprechende Kategorie aus, um Ihre Daten zu erfassen. -FR'
+  folder: 'Hier befinden sich Ihre Dateien und Dokumente, bitte wählen Sie aus. -FR'
+  customer: 'Sie finden hier verschiedene Kontaktdaten. -FR'
+open: Ouvert
+not_found:
+  policies: 'Keine Policen gefunden -FR'
+create_claim: 'Cas de sinistre'
+detail_information: 'Detail Informationen'
+premium_declaration: 'Déclaration'
+to_contact: Kontaktaufnahme -FR
+modul:
+  Contacts: Contact fichiers
+  ContactsFilesLink: Contact
+  Policies: Polices fichiers
+  PoliciesFilesLink: Polices 
+  Products: Prodotto fichiers
+  Claims: Sinistre fichiers
+  ClaimsFilesLink: Sinistres 
+  Projects: Projet fichiers
+  Bill: Facture fichiers
+block:
+  title:
+    all:
+      policies: Alle Policen
+      claims: Alle Schadenfälle -FR
+twoFa:
+  login: 'Connexion'
+  cancelLogin: 'Interrompere'
+  verify: 'Überprüfen'
+  qr_title: 'Bitte den QR-Code mit Ihrer App einlesen.'
+  error_code: 'Falsche 2FA Authentifizierung oder der Code ist bereits abgelaufen. Bitte neu versuchen.'
+  error_block: 'Zu viele Versuche (%try%). Gesperrt bis %date% '
+  instructions_qr: 'Lesen Sie bitte mit einer 2FA-App (z.B. Google Authenticator) den QR-Code ein und geben Sie die angezeigte Nummer in das Feld ein.'
+  instructions_code: 'Geben Sie bitte die angezeigte Nummer in der 2FA-App (z.B. Google Authenticator) in das Feld ein, mit der Sie zuvor den QR-Code eingelesen haben. Beim Verlust der App ist über die Hotline den 2FA zurückzusetzen.'
+search: 'Rechercher'
+show: 'Show'
+first: 'Premier'
+previous: 'Précédent'
+next: 'Suivant'
+last: 'Dernier'
+info: 'Affichage de l''élement _START_ à _END_ sur _TOTAL_ éléments'
+infoEmpty: 'Affichage de l''élement 0 à 0 sur 0 éléments'
+infoFiltered: '(filtré de _MAX_ éléments au total)'
+lengthMenu: 'Afficher _MENU_ éléments'
+noSelected: 'Aucune sélection effectuée'
+rowSelected: '1 ligne sélectionnée'
+rowsSelected: '%d lignes sélectionnées'
+selectAll: 'Sélectionner tout'
+selectNone: 'Supprimer la sélection'
+reports:
+  Policenliste_mit_Praemie: 'Liste des polices avec prime'
+  Policenspiegel: 'Resumes des polices'
+  Schadenliste: 'Liste des sinistres'
+  reports: Rapports
+#password reset  
+password:
+  forgot: Mot de passe oublié
+  reset: Réinitialiser le mot de passe
+  get_password_resetLink:  Lien pour réinitialiser le mot de passe
+  get_reset_mail_page_description: Demander un lien pour réinitialiser le mot de passe
+  reset_mail_sent: Lien de réinitialisation du mot de passe envoyé à l'e-mail enregistré
+  reset_success: Le mot de passe a été changé avec succès
+  passwords_do_not_match: Le mot de passe ne correspond pas
+  link_expired : Le lien a expiré.
+  too_many_attempts : Trop de tentatives, veuillez essayer après (%time%) secondes.
+  bad_credentials : Mauvaises Qualifications
+  password :  mot de passe
+  new_password : Nouveau mot de passe
+  confirm_password : Retaper le mot de passe
+  reset_password_for: Réinitialiser le mot de passe de l'utilisateur
+cancel: Annuler 
+send_mail: 'Envoyer un mail'
+create_issue: 'Créer un problème'
+issues_create_send_mail_subject: 'Modification des données client'
+close: Fermer
+submit: Soumettre
+username: Nom d'utilisateur

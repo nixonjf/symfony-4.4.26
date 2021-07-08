@@ -1,0 +1,57 @@
+homepage: Home
+information: Informationen
+pending_issues: Pendenzen
+policy_categories: Policen Kategorien
+create: Erfassen
+profile: Profil
+profile_header: Kontaktinformationen
+menu_category:
+    policies: Policen
+    claims: Schadenfälle
+    files: Dateien
+    documentOverview: Dokumentübersicht
+    tasks: Pendenzen
+    home: Home
+    change_password: Kennwort ändern
+    logout: Abmelden
+    contact : Ihr persönlicher Kontakt
+    my_profile : Mein Profil
+policy:
+    no_policy_info: Keine Policen vorhanden.
+claims:
+    category: Schaden Kategorie
+    create: Schaden erfassen
+    create_success: Schadenfall erfolgreich erfasst.
+    create_warning: Schadenfall erfasst. Dateien konnten nicht hochgeladen werden.
+    mail_not_send: Die Mail konnte nicht gesendet werden.
+    create_danger: Schadenfall konnte nicht erfasst werden.
+    create_mail_subject: Neuer Schadenfall erfasst
+files:
+    folder_selection: Ordner Auswahl
+    not_found_in_server: Datei existiert nicht auf dem Server
+    not_found: 'Datei nicht gefunden'
+    no_file_info: Keine Dateien vorhanden.
+notification_mail:
+    file_uploaded:
+        title: Neue Dateien wurden im BrokerWeb hochgeladen
+        subject: Datei in BrokerWeb hochgeladen
+        salutation: Sehr geehrter
+        table:
+            heading: 
+                title: Titel
+                files: Dateien
+allowed_file_types: Nur (pdf, xls, xlsx, doc und docx) werden unterstützt
+report:
+    no_report: Kein Bericht generiert
+    success: Der Bericht %fileName% wurde erfolgreich erstellt
+policy_overview: Policenübersicht
+claim_list: Schadenübersicht
+choose_files: 'Wähle Dateien'
+no_file_chosen: 'Keine Datei ausgewählt'
+task_create: Neue Pendenz
+tasks_list: Pendenzen
+task_details: Pendenzen Einzelheiten
+footer_text: 'Super-Broker Holding AG, Gartenstrasse 24, 6230 Emmenbrucke, Telefon 04242323'
+telephone: 'Telefon'
+mobile: 'Mobile'
+kundeberater: 'Kundeberater'

@@ -1,0 +1,79 @@
+instruction:
+  home: 'Welcome to your insurance portal. Here you can view your policies, record damage or contact us.'
+  policy: 'Please choose here from the various policy categories.'
+  claim: 'Please select the appropriate category to collect your data.'
+  folder: 'This is where your files and documents are located, please choose.'
+  customer: 'You will find various contact details here.'
+open: Open
+not_found:
+  policies: 'No policies found'
+create_claim: 'New claims'
+detail_information: 'Detail information'
+premium_declaration: 'Declaration'
+to_contact: Contact
+modul:
+  Contacts: Contact files
+  ContactsFilesLink: Contact
+  Policies: Policy files
+  PoliciesFilesLink: Policy 
+  Products: Product files
+  Claims: Claim files
+  ClaimsFilesLink: Claims 
+  Projects: Project files
+  Bill: Invoice files
+block:
+  title:
+    all:
+      policies: All policies
+      claims: All claims
+twoFa:
+  login: 'Login'
+  cancelLogin: 'Cancel login'
+  verify: 'Validate'
+  qr_title: 'Please scan QR code in Your mobile app.'
+  error_code: 'Wrong 2FA authorization code, or code expires. Please try again.'
+  error_block: 'To many attempts (%try%), next try at %date%'
+  instructions_qr: 'Please scan this QR code with Google Authenticator or other app supporting 2FA time-based authorization.  Then type generated code into field below.'
+  instructions_code: 'Please re-type CODE generated in 2FA authorization app (eg. Google Authenticator ) that was used before to scan QR code. If You don''t have app You need to ask for 2FA reset by hotline'
+search: 'Search'
+show: 'Show'
+first: 'First'
+previous: 'Previous'
+next: 'Next'
+last: 'Last'
+info: 'Showing _START_ to _END_ of _TOTAL_ entries'
+infoEmpty: 'Showing 0 to 0 of 0 entries'
+infoFiltered: '(filtered from _MAX_ total entries)'
+lengthMenu: 'Show _MENU_ entries'
+noSelected: 'No selection made'
+rowSelected: '%d row selected'
+rowsSelected: '%d rows selected'
+selectAll: 'Select all'
+selectNone: 'Clear selection'
+reports:
+  Policenliste_mit_Praemie: 'Policy list with premium'
+  Policenspiegel: 'Policy mirror'
+  Schadenliste: Claim list
+  reports: Reports 
+password:
+  forgot: Forgot Password
+  reset: Reset Password
+  get_password_resetLink: Link to reset password
+  get_reset_mail_page_description: Request link to reset password
+  reset_mail_sent: Password reset link sent to the registered email 
+  reset_success: Password changed successfully
+  passwords_do_not_match: Password does not match
+  link_expired : Link has expired.
+  too_many_attempts : Too many attempts, please try after (%time%) seconds.
+  bad_credentials : Bad credentials
+  password : Password
+  new_password : New Password
+  confirm_password : Re-enter Password      
+  reset_password_for: Reset password for user 
+cancel: Cancel
+send_mail: 'Send Mail'
+create_issue: 'Create Issue'
+issues_create_send_mail_subject: 'Customer data change'
+close: Close
+submit: Submit
+username: Username 

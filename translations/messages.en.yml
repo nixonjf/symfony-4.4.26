@@ -1,0 +1,57 @@
+homepage: Home
+information: Information
+pending_issues: Pending issues
+policy_categories: Policy categories
+create: Create
+profile: Profile
+profile_header: Contact information
+menu_category:
+    policies: Policies
+    claims: Claims
+    files: Files
+    documentOverview: Document Overview
+    tasks: Issues
+    home: Home
+    change_password: Change Password
+    logout: Log out
+    contact : Your Personal Contact
+    my_profile : My profile
+policy:
+    no_policy_info: This customer login has no policies stored that can be displayed.
+claims:
+    category: Claims category
+    create: Claim Create
+    create_success: Claim successfully recorded.
+    create_warning: Claim recorded. Files could not be uploaded.
+    mail_not_send: The mail could not be sent.
+    create_danger: Claim could not be recorded.
+    create_mail_subject: New claim recorded
+files:
+    folder_selection: Folder selection
+    not_found_in_server: File does not exist in server
+    not_found: 'Files not found'
+    no_file_info: This customer login has no files stored that can be displayed.
+notification_mail:
+    file_uploaded:
+        title: New files have been uploaded in BrokerWeb
+        subject: File uploaded in BrokerWeb
+        salutation: Dear
+        table:
+            heading: 
+                title: Title
+                files: Files
+allowed_file_types: Only (pdf, xls, xlsx, doc and docx) are supported
+report:
+    no_report: No report generated
+    success: Report %fileName% was genarated successfully
+policy_overview: Policy Overview
+claim_list: Claim Overview
+choose_files: Choose Files
+no_file_chosen: No file chosen
+task_create: New Issue
+tasks_list: Pending Issues
+task_details: Issue Details 
+footer_text: 'Super-Broker Holding AG, Gartenstrasse 24, 6230 Emmenbrucke, Telephone 04242323'
+telephone: 'Telephone'
+mobile: 'Mobile'
+kundeberater: 'Customer advisor'
