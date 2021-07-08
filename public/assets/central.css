@@ -233,3 +233,7 @@ a, .btn-primary, h2 {
    height:60px;    Height of the footer 
    background:#6cf;   
 }
+
+.form-error{ 
+    color: red;
+}
