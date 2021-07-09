@@ -1,6 +1,25 @@
 # symfony-4.4.26
 
-Login boilerplate using Json Web Token
+Auth boilerplate using Json Web Token
+ 
+  
+  Things done
+  1. API to check login user (JWT)
+  2. API to register user
+  3. API test cases
+  4. Admin login, forgot password and change password
+  5. Integrated core UI
+ 
+  ToDo:
+  1.Tests for admin login, reset password and change password
+  2.Translations
+  3.UI optimisations
+ 
+  
+  
+ 
+
+
 
 
 Register user<br />

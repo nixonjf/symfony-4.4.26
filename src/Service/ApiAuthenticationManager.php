@@ -72,17 +72,6 @@ class ApiAuthenticationManager
             return new JsonResponse(["error" => $e->getMessage()], 500);
         }
         return new JsonResponse(["success" => $user->getUsername() . " has been registered!"], 200);
-
-
-
-        echo 1;
-        die;
-        if ($contactLogin instanceof ContactLogin) {
-            return JsonResponse::create($this->createContactLoginResponse($contactLogin));
-        }
-
-        return new JsonResponse([
-            'login' => 'access denied',
-        ]);
+ 
     }
 }

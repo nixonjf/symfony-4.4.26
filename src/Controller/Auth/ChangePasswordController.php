@@ -55,3 +55,4 @@ class ChangePasswordController extends AbstractController
         ]);
     }
 }
+
