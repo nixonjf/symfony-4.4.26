@@ -1,0 +1,21 @@
+password:
+  forgot: Passwort vergessen
+  reset: Passwort zurücksetzen
+  get_password_resetLink: Link zum Zurücksetzen des Passworts
+  get_reset_mail_page_description: Link senden, um Passwort zurückzusetzen
+  reset_mail_sent: Link zum Zurücksetzen des Passworts an die registrierte E-Mail gesendet
+  reset_success: Das Passwort wurde erfolgreich geändert
+  passwords_do_not_match: Passwort stimmt nicht überein
+  link_expired : Der Link ist abgelaufen.
+  too_many_attempts : Zu viele Versuche, bitte versuchen Sie es nach Sekunden.
+  bad_credentials : Falsche Zugangsdaten
+  password : Passwort
+  new_password : Neues Passwort
+  confirm_password : Kennwort erneut eingeben 
+  reset_password_for: Passwort für Benutzer zurücksetzen 
+cancel: Abbrechen  
+close: Schließen
+submit: Einreichen
+username: Nutzername 
+email: Email
+Login: Login

@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Log in!{% endblock %}
+{% extends 'base.html.twig' %} 
+{% trans_default_domain 'trans' %}
+{% block title %}  {{ 'login'|trans }}{% endblock %}
 
 {% block body %}
 
@@ -18,7 +18,7 @@
                 </svg>
             </div>
             <div class="card-header">
-                <h2> Login </h2>
+                <h2>  {{ 'login'|trans }} </h2>
             </div>
             {% if error %}
                 <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -36,7 +36,7 @@
                                 <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
                                 </svg></span></div>
 
-                        {{ form_widget(loginForm.email , {'attr':{'value':last_username, 'class':'form-control'} }) }} 
+                        {{ form_widget(loginForm.email , {'attr':{'value':last_username,'placeholder':  'password.password'|trans, 'class':'form-control'} }) }} 
 
 
 
@@ -48,7 +48,7 @@
                                 <svg class="c-icon">
                                 <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-lock-locked"></use>
                                 </svg></span></div>
-                                {{ form_widget(loginForm.password , {'attr':{'value': '', 'class':'form-control'} }) }} 
+                                {{ form_widget(loginForm.password , {'attr':{'value': '','placeholder':  'password.password'|trans, 'class':'form-control'} }) }} 
 
                     </div>
                 </div>
@@ -65,7 +65,8 @@
                     </div>
                 #} 
                 <div class="form-group form-actions">
-                    <button class="btn btn-block btn-primary  " type="submit">Submit</button>
+                    <button class="btn btn-block btn-primary  " type="submit">
+                        {{ 'submit'|trans }}  </button>
                 </div>
 
             </div> 
@@ -73,7 +74,9 @@
 
             <!-- Remind Passowrd -->
             <div id="formFooter">
-                <a class="underlineHover" href="{{ path('app_forgot_password_request')}}">Forgot Password?</a>
+                <a class="underlineHover" href="{{ path('app_forgot_password_request')}}">
+                    {{ 'password.forgot'|trans }}
+                </a>
             </div>
 
         </div>

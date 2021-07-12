@@ -1,0 +1,6 @@
+2021/07/12 04:46:47 [emerg] 1#1: invalid number of arguments in "server_name" directive in /etc/nginx/conf.d/symfony.conf:2
+2021/07/12 04:48:32 [emerg] 1#1: invalid number of arguments in "server_name" directive in /etc/nginx/conf.d/symfony.conf:2
+2021/07/12 04:49:05 [emerg] 1#1: invalid number of arguments in "server_name" directive in /etc/nginx/conf.d/symfony.conf:2
+2021/07/12 04:49:41 [emerg] 1#1: invalid number of arguments in "server_name" directive in /etc/nginx/conf.d/symfony.conf:2
+2021/07/12 04:51:30 [emerg] 1#1: invalid number of arguments in "server_name" directive in /etc/nginx/conf.d/symfony.conf:2
+2021/07/12 04:51:42 [emerg] 1#1: invalid number of arguments in "server_name" directive in /etc/nginx/conf.d/symfony.conf:2

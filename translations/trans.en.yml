@@ -1,0 +1,21 @@
+password:
+  forgot: Forgot Password
+  reset: Reset Password
+  get_password_resetLink: Link to reset password
+  get_reset_mail_page_description: Request link to reset password
+  reset_mail_sent: Password reset link sent to the registered email 
+  reset_success: Password changed successfully
+  passwords_do_not_match: Password does not match
+  link_expired : Link has expired.
+  too_many_attempts : Too many attempts, please try again after some time.
+  bad_credentials : Bad credentials
+  password : Password
+  new_password : New Password
+  confirm_password : Re-enter Password      
+  reset_password_for: Reset password for user 
+cancel: Cancel 
+close: Close
+submit: Submit
+username: Username
+email: Email
+Login: Login
