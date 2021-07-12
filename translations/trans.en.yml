@@ -1,8 +1,9 @@
 password:
   forgot: Forgot Password
-  reset: Reset Password
-  get_password_resetLink: Link to reset password
-  get_reset_mail_page_description: Request link to reset password
+  reset: Reset Your Password
+  change: Change Your Password
+  get_password_resetLink:  Send password reset email
+  get_reset_mail_page_description: Enter your email address and we we will send you a link to reset your password.
   reset_mail_sent: Password reset link sent to the registered email 
   reset_success: Password changed successfully
   passwords_do_not_match: Password does not match
@@ -11,8 +12,7 @@ password:
   bad_credentials : Bad credentials
   password : Password
   new_password : New Password
-  confirm_password : Re-enter Password      
-  reset_password_for: Reset password for user 
+  confirm_password : Re-enter Password       
 cancel: Cancel 
 close: Close
 submit: Submit

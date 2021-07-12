@@ -1,7 +1,7 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %} 
 
-{% block title %}Change password{% endblock %}
-
+{% trans_default_domain 'trans' %}
+{% block title %}  {{ 'password.change'|trans }}{% endblock %} 
 
 
 
@@ -11,9 +11,6 @@
     <div  class="row wrapper fadeInDown">
         <div class="col-lg-6 col-sm-12" id="formContent">
 
-            <!-- Tabs Titles -->
-
-            <!-- Icon -->
             <div class="fadeIn first">
                 <svg   id="icon"class="c-icon">
 
@@ -21,18 +18,13 @@
                 </svg>
             </div>
             <div class="card-header">
-                <h1>Change password</h1>
+                <h1> {{ 'password.change'|trans }}</h1>
             </div>
 
 
             {% for flashError in app.flashes('change_password_error') %}
                 <div class="alert alert-danger" role="alert">{{ flashError }}</div>
             {% endfor %}
-            {#            {% if error %}#}
-            {#                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>#}
-            {#            {% endif %} #}
-            <!-- Reset Form --> 
-
             {{ form_start(resetForm) }}
 
 
@@ -41,17 +33,12 @@
 
                 <div class="form-group">
                     <div class="input-group">
-                        {#                        <input class="form-control" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>#} 
-                        <div class="input-group-append"><span class="input-group-text">
+                        {#<div class="input-group-append"><span class="input-group-text">
                                 <svg class="c-icon">
                                 <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
-                                </svg></span></div>
+                                </svg></span></div>#}
 
-                        {{ form_widget(resetForm.plainPassword.first , {'attr':{ 'class':'form-control'} }) }} 
-                        {#                        {{ form_widget(resetForm.plainPassword , {'attr':{'value':'', 'class':'form-control'} }) }} #}
-
-
-
+                        {{ form_widget(resetForm.plainPassword.first , {'attr':{ 'class':'form-control', 'placeholder':  'password.new_password'|trans  } }) }} 
                     </div>
                     <div class="form-error"> {{ form_errors(resetForm.plainPassword.first) }}
                     </div>
@@ -59,23 +46,15 @@
 
                 <div class="form-group">
                     <div class="input-group">
-                        {#                        <input class="form-control" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>#} 
-                        <div class="input-group-append"><span class="input-group-text">
+                       {# <div class="input-group-append"><span class="input-group-text">
                                 <svg class="c-icon">
                                 <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
-                                </svg></span></div>
+                                </svg></span></div>#}
 
 
-                        {{ form_widget(resetForm.plainPassword.second , {'attr':{ 'class':'form-control'} }) }} 
+                        {{ form_widget(resetForm.plainPassword.second , {'attr':{ 'class':'form-control', 'placeholder':  'password.confirm_password'|trans } }) }} 
 
                         <br> 
-
-                        {# {{ form_row(resetForm.password.second) }}
- 
-                         {{ form_widget(resetForm.plainPassword , {'attr':{ 'class':'form-control'} }) }} 
- #}
-                        {#                        {{ form_row(resetForm.email , {'attr':{'value':'', 'class':'form-control'} }) }} #}
-
                     </div>
                     <div class="form-error"> {{ form_errors(resetForm.plainPassword.second) }}
                     </div>
@@ -85,7 +64,7 @@
                 </div>
 
                 <div class="form-group form-actions">
-                    <button class="btn btn-block btn-primary" type="submit">Change</button>
+                    <button class="btn btn-block btn-primary" type="submit"> {{ 'submit'|trans }}</button>
                 </div> 
             </div>  
 

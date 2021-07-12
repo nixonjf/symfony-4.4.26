@@ -1,6 +1,6 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}Reset password{% endblock %}
+{% extends 'base.html.twig' %} 
+{% trans_default_domain 'trans' %}
+{% block title %}  {{ 'password.reset'|trans }}{% endblock %} 
 
 {% block body %}
 
@@ -44,7 +44,7 @@
                                 <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
                                 </svg></span></div>
 
-                        {{ form_widget(resetForm.plainPassword.first , {'attr':{ 'class':'form-control'} }) }} 
+                        {{ form_widget(resetForm.plainPassword.first , {'attr':{ 'class':'form-control', 'placeholder': 'password.new_password'|trans } }) }} 
                         {#                        {{ form_widget(resetForm.plainPassword , {'attr':{'value':'', 'class':'form-control'} }) }} #}
 
 
@@ -63,7 +63,7 @@
                                 </svg></span></div>
 
 
-                        {{ form_widget(resetForm.plainPassword.second , {'attr':{ 'class':'form-control'} }) }} 
+                        {{ form_widget(resetForm.plainPassword.second , {'attr':{ 'class':'form-control', 'placeholder': 'password.confirm_password'|trans } }) }} 
 
                         <br> 
 
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="form-group form-actions">
-                    <button class="btn btn-block btn-primary" type="submit">Reset</button>
+                    <button class="btn btn-block btn-primary" type="submit"> {{ 'password.reset'|trans }}</button>
                 </div> 
             </div>   
             {{ form_end(resetForm) }} 

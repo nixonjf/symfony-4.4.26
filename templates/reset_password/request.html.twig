@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Reset your password{% endblock %} 
+{% trans_default_domain 'trans' %}
+{% block title %}  {{ 'password.reset'|trans }}{% endblock %} 
 
 {% block body %}
 
@@ -18,7 +19,7 @@
                 </svg>
             </div>
             <div class="card-header">
-                <h2> Reset your password </h2>
+                <h2> {{ 'password.reset'|trans }} </h2>
             </div>
             {% for flashError in app.flashes('reset_password_error') %}
                 <div class="alert alert-danger" role="alert">{{ flashError }}</div>
@@ -30,8 +31,7 @@
 
             {{ form_start(requestForm) }}
             <small>
-                Enter your email address and we we will send you a
-                link to reset your password.
+                {{ 'password.get_reset_mail_page_description'|trans }}
             </small>
 
 
@@ -39,36 +39,20 @@
 
                 <div class="form-group">
                     <div class="input-group">
-                        {#                        <input class="form-control" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>#}
-
-
-
-
                         <div class="input-group-append"><span class="input-group-text">
                                 <svg class="c-icon">
                                 <use xlink:href="{{ asset('assets/coreui/icons/sprites/free.svg')}}#cil-envelope-open"></use>
                                 </svg></span></div>
 
                         {{ form_widget(requestForm.email , {'attr':{'value':'', 'class':'form-control'} }) }} 
-
-{#                        {{ form_row(requestForm.email , {'attr':{'value':'', 'class':'form-control'} }) }} #}
-
                     </div>
-                </div>
-
-
-                {#
-                    Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-                    See https://symfony.com/doc/current/security/remember_me.html
-            
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" name="_remember_me"> Remember me
-                        </label>
-                    </div>
-                #} 
+                </div> 
                 <div class="form-group form-actions">
-                    <button class="btn btn-block btn-primary" type="submit">Send password reset email</button>
+                    <button class="btn btn-block btn-primary" type="submit">
+
+                        {{ 'password.get_password_resetLink'|trans }}
+
+                    </button>
                 </div>
 
             </div>  
